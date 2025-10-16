@@ -46,7 +46,7 @@ header:hover{
 }
 .logo:hover{
     font-size: 4rem;
-    color: rgb(188, 18, 182);
+    color: cyan;
     
 }
 nav{
@@ -91,6 +91,9 @@ nav a:hover{
 }
 .robot{
     position:fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     right: -25rem;
     bottom: 3rem;
     z-index: -1;
