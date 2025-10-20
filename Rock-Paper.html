@@ -7,13 +7,42 @@
 </head>
 <body>
     <h1>ROCK-PAPER-SCISSOR</h1>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissor</button>
+    <button onclick="
+        if(compChoice === 0){
+            console.log('computer pick rock. Its a tie')
+        }
+        if(compChoice === 1){
+            console.log('computer pick paper. you lose')}
+        if(compChoice === 2){
+            console.log('computer pick scissor. you win')
+        }
+    ">Rock</button>
+    <button onclick="
+        if(compChoice === 0){
+            console.log('computer pick rock. you win')
+        }
+        if(compChoice === 1){
+            console.log('computer pick paper. its a tie')}
+        if(compChoice === 2){
+            console.log('computer pick scissor. you lose')
+        }
+    ">Paper</button>
+    <button onclick="
+        if(compChoice === 0){
+            console.log('computer pick rock. you lose')
+        }
+        if(compChoice === 1){
+            console.log('computer pick paper. its a win')}
+        if(compChoice === 2){
+            console.log('computer pick scissor. you tie')
+        }
+    ">Scissor</button>
 
     <script>
         let compChoice = Math.floor(Math.random() * 3);
-        console.log(Math.floor(Math.random() * 3));
+        console.log(compChoice);
+        
+        
     </script>
 </body>
 </html>
