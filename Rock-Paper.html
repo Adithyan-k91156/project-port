@@ -7,37 +7,52 @@
 </head>
 <body>
     <h1>ROCK-PAPER-SCISSOR</h1>
+    <div>
     <button onclick="
         if(compChoice === 0){
             console.log('computer pick rock. Its a tie')
+            alert('computer pick rock. Its a tie')
         }
         if(compChoice === 1){
             console.log('computer pick paper. you lose')}
+            alert('computer pick paper. you lose')
         if(compChoice === 2){
             console.log('computer pick scissor. you win')
+            alert('computer pick scissor. you win')
         }
+        compChoice = Math.floor(Math.random() * 3);
     ">Rock</button>
     <button onclick="
         if(compChoice === 0){
             console.log('computer pick rock. you win')
+            alert('computer pick rock. you win')
         }
         if(compChoice === 1){
-            console.log('computer pick paper. its a tie')}
+            console.log('computer pick paper. its a tie')
+            alert('computer pick paper. its a tie')
+        }
         if(compChoice === 2){
             console.log('computer pick scissor. you lose')
+            alert('computer pick scissor. you lose')
         }
+        compChoice = Math.floor(Math.random() * 3);
     ">Paper</button>
     <button onclick="
         if(compChoice === 0){
             console.log('computer pick rock. you lose')
+            alert('computer pick rock. you lose')
         }
         if(compChoice === 1){
-            console.log('computer pick paper. its a win')}
+            console.log('computer pick paper. its a win')
+            alert('computer pick paper. its a win')
+        }
         if(compChoice === 2){
             console.log('computer pick scissor. you tie')
+            alert('computer pick scissor. you tie')
         }
+        compChoice = Math.floor(Math.random() * 3);
     ">Scissor</button>
-
+    </div>
     <script>
         let compChoice = Math.floor(Math.random() * 3);
         console.log(compChoice);
